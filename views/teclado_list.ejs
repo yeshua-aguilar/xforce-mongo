@@ -34,7 +34,7 @@
 </nav>
 <br>
 
-<div class="container">
+<!-- <div class="container">
 <h3>Bienvenidos a nuestra pagina web</h3>
 <p>Presentacion del trabajo del grupo</p>
 <p>-Yeshua Aguilar Calderon<br>
@@ -46,7 +46,7 @@
 </div>
 <br>
 <br>
-<br>
+<br> -->
 
 
 
@@ -58,18 +58,18 @@
             <table class="table table-bordered">
                 <thead>
                   <tr>
+                    <th>NOMBRE</th>
                     <th>IDPRODUCTO</th>
-                    <th>DESCRIPCION</th>
                     <th>PRECIO</th>
                   </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <% if(dataPantalla.length){ %>
-                            <% dataPantalla.forEach( item => {%>
+                        <% if(dataTeclado.length){ %>
+                            <% dataTeclado.forEach( item => {%>
                                 <tr>
-                                    <td><%= item.MODELO  %></td>
-                                    <td><%= item.MARCA  %></td>
+                                    <td><%= item.nombre  %></td>
+                                    <td><%= item.IDPRODUCTO  %></td>
                                     <td><%= item.PRECIO  %></td>
                                 </tr>
                             <% })%>

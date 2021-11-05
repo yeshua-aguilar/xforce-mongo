@@ -28,13 +28,13 @@
     <a class="nav-link" href="/views/mouse/list">Mouse Gamer</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Pc Gamer</a>
+    <a class="nav-link" href="/views/pcgamer/list">Pc Gamer</a>
   </li>
 </ul>
 </nav>
 <br>
 
-<div class="container">
+<!-- <div class="container">
 <h3>Bienvenidos a nuestra pagina web</h3>
 <p>Presentacion del trabajo del grupo</p>
 <p>-Yeshua Aguilar Calderon<br>
@@ -46,7 +46,7 @@
 </div>
 <br>
 <br>
-<br>
+<br> -->
 
 
 
@@ -58,19 +58,19 @@
             <table class="table table-bordered">
                 <thead>
                   <tr>
-                    <th>IDPRODUCTO</th>
-                    <th>DESCRIPCION</th>
+                    <th>NOMBRE</th>
+                    <th>GAMA</th>
                     <th>PRECIO</th>
                   </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <% if(dataPantalla.length){ %>
-                            <% dataPantalla.forEach( item => {%>
+                        <% if(dataPcgamer.length){ %>
+                            <% dataPcgamer.forEach( item => {%>
                                 <tr>
-                                    <td><%= item.MODELO  %></td>
-                                    <td><%= item.MARCA  %></td>
-                                    <td><%= item.PRECIO  %></td>
+                                    <td><%= item.nombre  %></td>
+                                    <td><%= item.Gama  %></td>
+                                    <td><%= item.precio  %></td>
                                 </tr>
                             <% })%>
                         <% } %>
