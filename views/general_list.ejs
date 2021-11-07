@@ -37,7 +37,7 @@
 </nav>
 <br>
 
-<!-- <div class="container">
+<div class="container">
 <h3>Bienvenidos a nuestra pagina web</h3>
 <p>Presentacion del trabajo del grupo</p>
 <p>-Yeshua Aguilar Calderon<br>
@@ -49,7 +49,7 @@
 </div>
 <br>
 <br>
-<br> -->
+<br>
 
 
 
@@ -62,16 +62,20 @@
                 <thead>
                   <tr>
                     <th>NOMBRE</th>
+                    <th>CATEGORIA</th>
+                    <th>MARCA</th>
                     <th>PRECIO</th>
                   </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <% if(dataMouse.length){ %>
-                            <% dataMouse.forEach( item => {%>
+                        <% if(dataGeneral.length){ %>
+                            <% dataGeneral.forEach( item => {%>
                                 <tr>
                                     <td><%= item.nombre  %></td>
-                                    <td><%= item.PRECIO  %></td>
+                                    <td><%= item.categoria  %></td>
+                                    <td><%= item.marca  %></td>
+                                    <td><%= item.precio  %></td>
                                 </tr>
                             <% })%>
                         <% } %>
