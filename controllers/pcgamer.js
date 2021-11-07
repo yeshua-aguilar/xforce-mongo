@@ -4,7 +4,7 @@ var db = client.db("certus");// SELECCIONANDO LA BASE DE DATOS
 var controller = {
     listar: function (req, res) {
         console.log("-------------------");
-        console.log("ENTRANDO A LA FUNCION LISTAR MOUSE");
+        console.log("ENTRANDO A LA FUNCION LISTAR PCGAMER");
         db.collection("pcgamer").find().toArray()
             .then(
                 pcgamer => {
