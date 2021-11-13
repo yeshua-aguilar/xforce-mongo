@@ -23,7 +23,7 @@ app.use(express.json());
 
 
 //importar imagenes
-app.use(express.static(path.join(__dirname, 'public/')));
+//app.use(express.static(path.join(__dirname, 'public/')));
 
 
 // REESCRIBIR RUTAS
