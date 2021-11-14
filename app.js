@@ -25,7 +25,6 @@ app.use(express.json());
 //importar imagenes
 //app.use(express.static(path.join(__dirname, '/public')));
 
-
 // REESCRIBIR RUTAS
 app.use('/',pantalla_routes);
 app.use('/',teclado_routes);
