@@ -21,7 +21,7 @@ var controller = {
         if (req.params.id == 1) {
             var mouse = {}
             mouse.nombre = "";
-            mouse.precio = "";
+            mouse.PRECIO = "";
             res.render('mouse_form', { mouseForm: mouse });
         }
 
