@@ -10,7 +10,7 @@ var controller = {
                 teclado => {
                     res.render('teclado_list', { dataTeclado: teclado });
                 }
-            ).catch(
+            ).catch(  
                 error => console.log(error)
             )
     },
