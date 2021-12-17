@@ -20,10 +20,10 @@ var controller = {
         console.log("ENTRANDO A LA FUNCION FORM");
         console.log("id:" + req.params.id);
         if (req.params.id == 1) {
+            console.log("ENTRANDO A LA FUNCION nuevo FORM");
             var teclado = {}
             teclado.nombre = "";
-            teclado.categoria = "";
-            teclado.marca = "";
+            teclado.idproducto = "";           
             teclado.precio = "";
             res.render('teclado_form', { tecladoForm:teclado });
         }
@@ -43,7 +43,7 @@ var controller = {
         console.log(teclado);
         db.collection("teclado").insertOne(teclado).then(
 
-            ()=>{
+            ()=>{                  // es para cuando el usario termine de inserta los datos vuelva a la pagina de lista
                 res.redirect('/views/teclado/list');
             }
         ).catch(
